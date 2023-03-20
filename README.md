@@ -4,4 +4,6 @@ In this repository I want to create useful functions that can turn your 'raw' da
 
 ## Overview of available functions:
 
-- $\chi^2$-minimization
+Here is a list of all functions in this repository including a quick overview of their recommended usages, parameters and optionally some function-specific notes.
+
+### $\chi^2$-minimization
