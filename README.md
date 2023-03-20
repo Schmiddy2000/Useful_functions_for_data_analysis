@@ -4,4 +4,4 @@ In this repository I want to create useful functions that can turn your 'raw' da
 
 ## Overview of available functions:
 
-- $chi^2$-minimization
+- $\chi^2$-minimization
