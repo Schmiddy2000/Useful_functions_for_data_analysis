@@ -31,6 +31,11 @@ brackets behind the objects name:
 my_value = my_list[3]
 </pre>
 
+<pre>
+<my_list> 3 </my_list>
+</pre>
+
+
 This sets `my_value` to `4` since _indices_ start at `0`. If we want to retrieve more
 than one value from our data set, we need use _slicing_.
 
@@ -46,7 +51,7 @@ first element (`0`), the last element (`len(some_iterable)`) and `1`. If we now
 want to get the numbers from `2` to `4` we can do
 
 <pre>
-my_subset = my_list[1:4]
+sliced_list = my_list[1:4]
 </pre>
 
 Note that we didn't set a _step_size_ and that the index `4` would correspond to the
@@ -56,4 +61,4 @@ fifth element (`5`) in `my_list`. This is due to the fact that
 [start_index : stop_index]
 </pre>
 
-defines a half open interval.
+defines a half open interval where the _stop_index_ isn't included anymore.
