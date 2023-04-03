@@ -38,11 +38,22 @@ The slicing syntax is composed of up to three _parameters_. Namely, _start_index
 _stop_index_ and _step_size_. We can apply them onto the data set by using them like
 
 <pre>
-[start_index : stop_index : step_size]
+some_iterable[start_index : stop_index : step_size]
 </pre>
 
-where the _indices_ have to be _integers_. When not specified, they default to 
+where the _indices_ have to be _integers_. When not specified, they default to the 
+first element (`0`), the last element (`len(some_iterable)`) and `1`. If we now 
+want to get the numbers from `2` to `4` we can do
 
-    - start_index = 0
-    - stop_index = len(data_set) - 1
-    - step_size = 1
+<pre>
+my_subset = my_list[1:4]
+</pre>
+
+Note that we didn't set a _step_size_ and that the index `4` would correspond to the
+fifth element (`5`) in `my_list`. This is due to the fact that 
+
+<pre>
+[start_index : stop_index]
+</pre>
+
+defines a half open interval.
